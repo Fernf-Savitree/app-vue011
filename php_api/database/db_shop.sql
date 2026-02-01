@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2026 at 12:52 PM
+-- Generation Time: Feb 01, 2026 at 12:56 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -43,8 +43,7 @@ CREATE TABLE `customers` (
 INSERT INTO `customers` (`customer_id`, `firstName`, `lastName`, `phone`, `username`, `password`) VALUES
 (1, 'สมชาย', 'ใจดี', '0812345678', 'somchai', 'pass1234'),
 (2, 'วิภา', 'สุขสันต์', '0898765432', 'wipa', 'wipa2025'),
-(3, 'John', 'Doe', '0991122334', 'johnd', 'securepwd'),
-(4, 'สาวิตรี', 'แสงทอง', '0969094028', 'Savitree', '$2y$10$ckgCuRQ.adZJqjDPIeBjyuVofVt7gMc4fonbix/Gi3UEyBYAMnvR.');
+(3, 'John', 'Doe', '0991122334', 'johnd', 'securepwd');
 
 -- --------------------------------------------------------
 
@@ -114,7 +113,8 @@ CREATE TABLE `type` (
 
 INSERT INTO `type` (`Type_ID`, `Type_name`) VALUES
 (1, 'เครื่องครัว'),
-(2, 'เครื่องครัว');
+(2, 'เครื่องครัว'),
+(6, 'เครื่องไฟฟ้า');
 
 --
 -- Indexes for dumped tables
@@ -152,13 +152,13 @@ ALTER TABLE `type`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `customer_id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `customer_id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `emp_id` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `emp_id` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -170,7 +170,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `type`
 --
 ALTER TABLE `type`
-  MODIFY `Type_ID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสสินค้า', AUTO_INCREMENT=4;
+  MODIFY `Type_ID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสสินค้า', AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

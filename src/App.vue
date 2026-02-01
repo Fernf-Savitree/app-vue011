@@ -35,6 +35,11 @@
           <a class="nav-link" href="/Customer">Customer</a>
 
         </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="/Customer_crud">Customer_crud</a>
+
+        </li>
          <li class="nav-item">
 
           <a class="nav-link" href="/Contact">Contact</a>
@@ -46,10 +51,20 @@
           <a class="nav-link" href="/type">Type</a>
 
         </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="/Type_crud">Type_crud</a>
+
+        </li>
 
          <li class="nav-item">
 
           <a class="nav-link" href="/employee">Employee</a>
+
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="/Employee_crud">Employee_crud</a>
 
         </li>
 
