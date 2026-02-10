@@ -89,6 +89,26 @@ const routes = [
     name: 'type_crud',
     
     component: () => import('../views/Type_crud.vue')
+  },
+
+  {
+    path: '/student_crud',
+    name: 'student_crud',
+    
+    component: () => import('../views/Student_crud.vue')
+  },
+
+  {
+    path: '/add_student',
+    name: 'add_student',
+    
+    component: () => import('../views/Add_student.vue')
+  },
+  {
+    path: '/student',
+    name: 'student',
+    
+    component: () => import('../views/Student.vue')
   }
 
 ]
