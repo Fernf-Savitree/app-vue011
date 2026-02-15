@@ -109,6 +109,20 @@ const routes = [
     name: 'student',
     
     component: () => import('../views/Student.vue')
+  },
+
+  {
+    path: '/product_crud',
+    name: 'product_crud',
+    
+    component: () => import('../views/Product_crud.vue')
+  },
+
+  {
+    path: '/employee_crud_image',
+    name: 'employee_crud_image',
+    
+    component: () => import('../views/Employee_crud_image.vue')
   }
 
 ]
@@ -119,3 +133,6 @@ const router = createRouter({
 })
 
 export default router
+
+
+
